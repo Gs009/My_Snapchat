@@ -1,0 +1,14 @@
+<div id="log" ng-controller="logController">
+	<form method="POST" ng-submit="login()">	
+		<label class="item item-input">
+			<input type="text" name="email" placeholder="email" ng-model="email">			
+		</label>
+		<label class="item item-input">
+			<input type="password" name="pass" ng-model="pass">
+		</label>
+		<button class="button button-block button-balanced" type="submit">
+			Connexion
+		</button>
+	</form>
+	<a class="button button-block button-assertive" href="#/up">S'inscrire</a>
+</div>

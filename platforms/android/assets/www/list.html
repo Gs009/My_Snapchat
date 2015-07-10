@@ -1,0 +1,13 @@
+<ion-list id="list" ng-controller="listController">
+	<ion-item data-ng-repeat="username in list" ng-click="show(username.id)">
+		{{username.username}}
+	</ion-item>
+</ion-list>
+
+<div ng-controller="sendController">
+	<button class="button button-full button-balanced" data-ng-click="send()">
+		Send
+	</button>
+	{{ errore }}
+</div>
+<a class="button button-block button-assertive" href="#/home">Retour</a>

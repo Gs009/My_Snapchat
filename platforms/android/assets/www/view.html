@@ -1,0 +1,9 @@
+<div ng-controller="view">
+<img id="vu">
+	<ion-list ng-repeat="url in img">
+			<ion-item ng-click="tap(url.url)">
+				{{url.username}}
+			</ion-item>
+	</ion-list>
+</div>
+<a class="button button-block button-assertive" href="#/home">Retour</a>
